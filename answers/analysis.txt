@@ -21,3 +21,79 @@ logstress
 forphan
 dorphan
 console (also maybe, but exec failed on it so probably not)
+
+Bonuses:
+usertests:
+Takes about a couple minutes to run fully. Seems to test various things about the system.
+
+Output Snippet:
+usertests starting
+test copyin: OK
+test copyout: OK
+test copyinstr1: OK
+test copyinstr2: OK
+test copyinstr3: OK
+test rwsbrk: OK
+test truncate1: OK
+test truncate2: OK
+test truncate3: OK
+test openiput: OK
+test exitiput: OK
+test iput: OK
+test opentest: OK
+test writetest: OK
+test writebig: OK
+test createtest: OK
+test dirtest: OK
+test exectest: OK
+test pipe1: OK
+test killstatus: OK
+test preempt: kill... wait... OK
+test exitwait: OK
+test reparent: OK
+test twochildren: OK
+test forkfork: OK
+test forkforkfork: OK
+test reparent2: OK
+test mem: OK
+test sharedfd: OK
+test fourfiles: OK
+test createdelete: OK
+test unlinkread: OK
+test linktest: OK
+test concreate: OK
+test linkunlink: OK
+test subdir: OK
+test bigwrite: OK
+test bigfile: OK
+test fourteen: OK
+test rmdot: OK
+test dirfile: OK
+test iref: OK
+test forktest: OK
+test sbrkbasic: OK
+test sbrkmuch: OK
+
+forktest:
+Tests that fork is working presumably?
+
+Output Snippet:
+$ forktest
+fork test
+fork test OK
+
+stressfs:
+Presumably runs some sort of stress test on the system which seems to relate to reads and writes.
+
+Output Snippet:
+stressfs starting
+write 0
+write 1
+write 2
+write 3
+write 4
+read
+read
+rerade
+ad
+read
